@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm Adel</h1>
+        <p>Beginner Web Developer</p>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm learning web development using VS Code. I started my journey with HTML and CSS and I'm eager to learn more.</p>
+        </section>
+
+        <section class="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>VS Code</li>
+                <li>Continuous Learning</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>My First Website</h3>
+                <p>A simple page built with HTML and CSS</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <button>Send Message</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - My Personal Page</p>
+    </footer>
+</body>
+</html>
+<!-- Like Button -->
+<button id="likeBtn" 
+        style="background:#e74c3c; color:white; padding:12px 24px; border:none; 
+               border-radius:8px; cursor:pointer; font-size:16px; font-weight:bold;">
+  ❤ Like <span id="likeCount">0</span>
+</button>
+
+<script>
+  let count = 0;
+  const btn = document.getElementById("likeBtn");
+  const counter = document.getElementById("likeCount");
+
+  btn.addEventListener("click", () => {
+    count++;
+    counter.textContent = count;
+  });
+</script>
